@@ -1,0 +1,43 @@
+scp -r -i key_pair_prk1.pem ./demo-dtcc/ ubuntu@ec2-54-71-242-58.us-west-2.compute.amazonaws.com:/home/ubuntu/
+
+
+sudo su
+
+
+apt-get update && apt-get install -y docker.io
+
+docker info 
+docker images
+docker ps
+docker pull hello-world
+
+docker run hello-world
+
+docker ps -a 
+
+docker pull centos:6.7
+
+docker run -it centos:6.7
+
+yum info git
+
+ctrl+p+q
+docker ps
+docker attach 79761505d03e 
+
+exit - kill docker command
+
+docker pull qlik/gradle
+
+
+docker run qlik/gradle
+ 
+change Dockerfile2  - bootRun
+
+docker build -t prashant/boot -f Dockerfile2 .
+
+docker run -d -p 8080:8080 prashant/boot
+
+
+
+
